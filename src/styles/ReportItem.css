@@ -1,1 +1,160 @@
-// OWNER: Abdimajid
+.report-page {
+  min-height: 100vh;
+  background: #f4f7fc;
+  padding: 50px 20px;
+}
+
+.report-container {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+}
+
+.report-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.report-header h1 {
+  color: #174ea6;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.report-header p {
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.form-group label {
+  color: #26364a;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d5deeb;
+  border-radius: 7px;
+  outline: none;
+  font-size: 14px;
+  font-family: inherit;
+  background: #fff;
+  color: #26364a;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.report-type-options {
+  display: flex;
+  gap: 15px;
+}
+
+.type-option {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border: 1px solid #d5deeb;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.type-option input {
+  width: auto;
+  accent-color: #2563eb;
+}
+
+.type-option span {
+  color: #26364a;
+  font-size: 14px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.submit-report-btn {
+  padding: 14px;
+  background: #174ea6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-report-btn:hover {
+  background: #0f3679;
+}
+
+.success-message {
+  padding: 12px;
+  margin-bottom: 20px;
+  background: #e8f7ed;
+  color: #18743b;
+  border-radius: 7px;
+}
+
+.error-message {
+  padding: 12px;
+  margin-bottom: 20px;
+  background: #fdecec;
+  color: #b42318;
+  border-radius: 7px;
+}
+
+.form-group small {
+  color: #667085;
+}
+
+@media (max-width: 600px) {
+  .report-container {
+    padding: 22px;
+  }
+
+  .report-header h1 {
+    font-size: 25px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .report-type-options {
+    flex-direction: column;
+  }
+}
