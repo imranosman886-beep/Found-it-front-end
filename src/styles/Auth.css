@@ -1,1 +1,110 @@
-// OWNER: Priscillah
+/* Authentication pages */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background: #f1f5f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Login and signup forms */
+.auth-form {
+  width: 100%;
+  max-width: 450px;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Form heading */
+.auth-form h1 {
+  margin-bottom: 12px;
+  color: #2563eb;
+  font-size: 28px;
+  text-align: center;
+}
+
+.auth-form > p {
+  margin-bottom: 24px;
+  color: #64748b;
+  text-align: center;
+}
+
+/* Labels */
+.auth-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #334155;
+  font-weight: 600;
+}
+
+/* Input fields */
+.auth-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Submit button */
+.auth-form button {
+  width: 100%;
+  padding: 13px;
+  margin-top: 8px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.auth-form button:hover {
+  background: #1d4ed8;
+}
+
+/* Error messages */
+.auth-error {
+  padding: 10px;
+  margin-bottom: 18px;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Links */
+.auth-form a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-form a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .auth-form {
+    padding: 24px;
+  }
+
+  .auth-form h1 {
+    font-size: 24px;
+  }
+}
